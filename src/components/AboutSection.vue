@@ -4,7 +4,7 @@
 
   const stats = [
     { value: '13+', label: 'Years of experience' },
-    { value: '3', label: 'Frameworks in production: Vue, React, Angular' },
+    { value: '12', label: 'Years remote' },
     { value: 'Remote', label: 'Open to US-based remote roles' },
   ]
 </script>
