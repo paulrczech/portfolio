@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { vReveal } from '../composables/useReveal'
+import profilePhoto from '../assets/profile/paul.jpg'
 
 const stats = [
   { value: '13+', label: 'Years of experience' },
@@ -12,8 +13,13 @@ const stats = [
   <section id="about" class="section">
     <div class="container layout">
       <div class="copy">
-        <p v-reveal class="eyebrow">About</p>
-        <h2 v-reveal class="section-heading">A steady hand on the front end.</h2>
+        <div v-reveal class="intro-row">
+          <img :src="profilePhoto" alt="Paul Czech" class="avatar" width="72" height="72" />
+          <div>
+            <p class="eyebrow">About</p>
+            <h2 class="section-heading">A steady hand on the front end.</h2>
+          </div>
+        </div>
 
         <p v-reveal class="paragraph">
           I'm a senior front-end developer with 13+ years building responsive, high-performance web
@@ -52,6 +58,21 @@ const stats = [
   grid-template-columns: 1.4fr 1fr;
   gap: clamp(32px, 6vw, 64px);
   align-items: start;
+}
+
+.intro-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-border);
+  flex-shrink: 0;
 }
 
 .paragraph {
