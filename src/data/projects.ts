@@ -34,29 +34,29 @@ export const projects: Project[] = [
   {
     id: 'dispute-platform',
     eyebrow: 'Case Study · Enterprise',
-    title: 'Contract Dispute & Claims Platform',
+    title: 'Pilot Schedule Dispute Tracking System',
     blurb:
-      'A ticketing and claims platform for a national pilot union, taking contract disputes from intake through multi-level review and resolution. Client work under NDA, described here without the client name.',
+      'An airline pilot schedule dispute tracking and management system, built as a module inside an existing enterprise DNN portal. Client work under NDA, described here without the client name or other identifying details.',
     tags: ['Vue 3', 'TypeScript', 'Pinia', 'Vue Router', 'DNN Integration'],
     visual: 'workflow',
     caseStudy: {
       summary:
-        'Pilots needed a way to report contract violations and file formal claims. Union agents needed to triage, investigate, and route those claims through a multi-step review workflow, while company-side agents needed limited, read-only visibility once a claim reached them, all running as a module inside an existing enterprise DNN portal.',
+        'The client needed a structured way to collect, review, and route formal submissions within an existing portal.',
       sections: [
         {
           heading: 'Role',
           body: [
-            'Owned the Vue 3 frontend end to end: architecture, component library, state management, and API integration, from UX designs through production deployment as a DNN module.',
+            'Built the Vue 3 front end and handled the API integrations, translating established wireframes and requirements into a responsive, accessible interface deployed as a DNN module.',
           ],
         },
         {
           heading: 'What I built',
           body: [
-            'A dual-mode application (pilot-facing and admin-facing) from a single codebase, with seven distinct role levels controlling navigation, actions, and visibility through route guards.',
-            'A dynamic drag-and-drop claim builder that lets agents assemble multi-section claims (pilot info, incident details, timecards, schedules, attachments, free text) from reusable component types, sharing the same rendering engine across edit, preview, and read-only modes.',
-            'A threaded messaging and case-management system with auto-saving drafts, attachment handling, and integration with an external case-tracking system.',
-            'An analytics dashboard covering throughput and agent performance, built on Chart.js with configurable date ranges and pilot-attribute filtering.',
-            'A shared component library (data tables, offcanvas panels, validated form elements, modals) that grew alongside the product and now covers the large majority of new feature work through composition rather than new code.',
+            'A role-based application with distinct views and permissions controlling navigation and visibility.',
+            'A dynamic form builder for assembling structured submissions from reusable component types, shared across edit, preview, and read-only modes.',
+            'A messaging interface with auto-saving drafts and attachment handling.',
+            'A shared component library (data tables, panels, validated form elements, modals) that grew alongside the product and now covers most new feature work through composition rather than new code.',
+            ,
           ],
         },
       ],
@@ -73,8 +73,16 @@ export const projects: Project[] = [
     tags: ['Vue 3', 'Ionic', 'Capacitor', 'Geolocation'],
     visual: 'trail',
     links: [
-      { label: 'App Store', href: 'https://apps.apple.com/us/app/cccsa-xc-ski/id6744336230', icon: 'external' },
-      { label: 'Google Play', href: 'https://play.google.com/store/apps/details?id=com.coloradocrosscountry.app&hl=en', icon: 'external' },
+      {
+        label: 'App Store',
+        href: 'https://apps.apple.com/us/app/cccsa-xc-ski/id6744336230',
+        icon: 'external',
+      },
+      {
+        label: 'Google Play',
+        href: 'https://play.google.com/store/apps/details?id=com.coloradocrosscountry.app&hl=en',
+        icon: 'external',
+      },
     ],
     caseStudy: {
       summary:
@@ -138,7 +146,13 @@ export const projects: Project[] = [
       'An agency demo site showing prospective clients a structured-content approach to WordPress. I styled and extended the site’s custom Gutenberg block library, including several blocks I built from scratch.',
     tags: ['WordPress', 'Custom Gutenberg Blocks', 'PHP', 'SCSS'],
     visual: 'blocks',
-    links: [{ label: 'Visit Site', href: 'https://bananabread.dev/', icon: 'external' }],
+    links: [
+      {
+        label: 'Visit Site',
+        href: 'https://bananabread.dev/',
+        icon: 'external',
+      },
+    ],
     caseStudy: {
       summary:
         "Prospective clients often came in asking for 'a page builder plugin,' and ended up with content that was flexible but inconsistent, hard to maintain, and easy to break. This site was built as a working demo to make the opposite case: give editors real layout flexibility through a purpose-built set of Gutenberg blocks, without losing the guardrails that keep a site's content clean and on-brand.",
@@ -171,13 +185,22 @@ export const projects: Project[] = [
     tags: ['Vue 3', 'TypeScript', 'Ionic', 'Capacitor', 'Pinia', 'Tone.js'],
     visual: 'notes',
     links: [
-      { label: 'Live Demo', href: 'https://eddyflow.netlify.app/home', icon: 'external' },
-      { label: 'View Code', href: 'https://github.com/paulrczech/eddy', icon: 'github' },
+      {
+        label: 'Live Demo',
+        href: 'https://eddyflow.netlify.app/home',
+        icon: 'external',
+      },
+      {
+        label: 'View Code',
+        href: 'https://github.com/paulrczech/eddy',
+        icon: 'github',
+      },
     ],
     sideNote: {
       label: 'Drift',
       href: 'https://project-drift.netlify.app/',
-      description: 'an ambient generative music experiment built on the same Vue 3 and Tone.js stack.',
+      description:
+        'an ambient generative music experiment built on the same Vue 3 and Tone.js stack.',
     },
   },
 ]
