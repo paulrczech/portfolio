@@ -14,8 +14,8 @@ const stats = [
     <div class="container layout">
       <div class="copy">
         <div v-reveal class="intro-row">
-          <img :src="profilePhoto" alt="Paul Czech" class="avatar" width="72" height="72" />
-          <div>
+          <img :src="profilePhoto" alt="Paul Czech" class="avatar" width="120" height="120" />
+          <div class="intro-text">
             <p class="eyebrow">About</p>
             <h2 class="section-heading">A steady hand on the front end.</h2>
           </div>
@@ -67,8 +67,8 @@ const stats = [
 }
 
 .avatar {
-  width: 72px;
-  height: 72px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--color-border);
@@ -114,6 +114,19 @@ const stats = [
 @media (max-width: 800px) {
   .layout {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .intro-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .avatar {
+    width: 132px;
+    height: 132px;
   }
 }
 </style>
