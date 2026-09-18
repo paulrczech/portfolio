@@ -25,6 +25,12 @@ const emit = defineEmits<{
       <h3 class="title">{{ project.title }}</h3>
       <p class="blurb">{{ project.blurb }}</p>
 
+      <p v-if="project.sideNote" class="side-note">
+        Also built
+        <a :href="project.sideNote.href" target="_blank" rel="noopener noreferrer" class="side-link">{{ project.sideNote.label }}</a>,
+        {{ project.sideNote.description }}
+      </p>
+
       <ul class="tags">
         <li v-for="tag in project.tags" :key="tag" class="tag">{{ tag }}</li>
       </ul>
@@ -92,6 +98,22 @@ const emit = defineEmits<{
   color: var(--color-text-secondary);
   font-size: 0.95rem;
   flex: 1;
+}
+
+.side-note {
+  font-size: 0.85rem;
+  color: var(--color-text-tertiary);
+  line-height: 1.6;
+}
+
+.side-link {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.side-link:hover {
+  color: var(--color-accent-hover);
 }
 
 .tags {

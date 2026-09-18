@@ -18,7 +18,12 @@ const activeProject = ref<Project | null>(null)
       </p>
 
       <div class="grid">
-        <div v-for="(project, i) in projects" :key="project.id" v-reveal="i * 90">
+        <div
+          v-for="(project, i) in projects"
+          :key="project.id"
+          v-reveal="i * 90"
+          :class="{ wide: project.id === 'eddy' }"
+        >
           <ProjectCard :project="project" @open="activeProject = $event" />
         </div>
       </div>
@@ -34,5 +39,16 @@ const activeProject = ref<Project | null>(null)
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
+}
+
+/* Tailored to the current 5-project count (3 + 2 last row): widening the
+   final card fills what would otherwise be an empty third slot. Revisit
+   this if the project count changes. Scoped to widths that actually fit
+   3 columns, since `span 2` confuses auto-fit's column count below that
+   and breaks single-column mobile layout. */
+@media (min-width: 900px) {
+  .wide {
+    grid-column: span 2;
+  }
 }
 </style>

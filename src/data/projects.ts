@@ -23,6 +23,11 @@ export interface Project {
     sections: CaseStudySection[]
     closing: string
   }
+  sideNote?: {
+    label: string
+    href: string
+    description: string
+  }
 }
 
 export const projects: Project[] = [
@@ -108,13 +113,13 @@ export const projects: Project[] = [
         {
           heading: 'Role',
           body: [
-            'Rebuilt the mobile front end using Vue 3 and Ionic, replacing the legacy stack while preserving every workflow existing users already depended on.',
+            'Rebuilt the mobile front end using Vue 3 and Ionic, working against APIs maintained by a separate backend team, while replacing the legacy stack and preserving every workflow existing users already depended on.',
           ],
         },
         {
           heading: 'What I built',
           body: [
-            'A cross-platform iOS and Android app from a single Vue 3 and Ionic codebase, with two-factor authentication and role-based access for different user types.',
+            'A cross-platform iOS and Android app from a single Vue 3 and Ionic codebase, including the front-end flows for two-factor authentication and role-based access across different user types.',
             'A full offline-first workflow: field measurements save locally first, then sync automatically in the background on a timer and on network reconnect, with a visible pending-sync count so crews always know their data’s status.',
             'State management built on reactive service singletons rather than Pinia or Vuex, paired with a purpose-built offline sync queue instead of reaching for a heavier off-the-shelf solution.',
             'Multi-account and multi-device switching so support representatives can move between customer portals without re-authenticating.',
@@ -169,5 +174,10 @@ export const projects: Project[] = [
       { label: 'Live Demo', href: 'https://eddyflow.netlify.app/home', icon: 'external' },
       { label: 'View Code', href: 'https://github.com/paulrczech/eddy', icon: 'github' },
     ],
+    sideNote: {
+      label: 'Drift',
+      href: 'https://project-drift.netlify.app/',
+      description: 'an ambient generative music experiment built on the same Vue 3 and Tone.js stack.',
+    },
   },
 ]
