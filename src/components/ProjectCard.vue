@@ -15,7 +15,7 @@ const emit = defineEmits<{
 
 <template>
   <article class="project-card card">
-    <div v-if="project.image" class="screenshot">
+    <div v-if="project.image" class="screenshot" :style="{ aspectRatio: project.imageAspect || '16 / 9' }">
       <img :src="project.image" :alt="`${project.title} screenshot`" loading="lazy" />
     </div>
     <ProjectVisual v-else :variant="project.visual" />
@@ -65,7 +65,6 @@ const emit = defineEmits<{
 }
 
 .screenshot {
-  aspect-ratio: 16 / 9;
   border-radius: var(--radius-md);
   overflow: hidden;
   border: 1px solid var(--color-border);

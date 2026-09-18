@@ -1,3 +1,7 @@
+import cccsaScreenshot from '../assets/projects/cccsa.jpg'
+import eddyScreenshot from '../assets/projects/eddy.jpg'
+import bananabreadScreenshot from '../assets/projects/bananabread.jpg'
+
 export interface ProjectLink {
   label: string
   href: string
@@ -17,6 +21,7 @@ export interface Project {
   tags: string[]
   visual: 'workflow' | 'trail' | 'notes' | 'blocks' | 'sync'
   image?: string
+  imageAspect?: string
   links?: ProjectLink[]
   caseStudy?: {
     summary: string
@@ -71,6 +76,8 @@ export const projects: Project[] = [
       'A mobile-first app for the Colorado Cross Country Skiing Association covering GPS trail navigation, resort punch-pass redemption, and real-time weather, built on reusable components and modular state logic.',
     tags: ['Vue 3', 'Ionic', 'Capacitor', 'Geolocation'],
     visual: 'trail',
+    image: cccsaScreenshot,
+    imageAspect: '4 / 3',
     links: [
       {
         label: 'App Store',
@@ -145,6 +152,7 @@ export const projects: Project[] = [
       'An agency demo site showing prospective clients a structured-content approach to WordPress. I styled and extended the site’s custom Gutenberg block library, including several blocks I built from scratch.',
     tags: ['WordPress', 'Custom Gutenberg Blocks', 'PHP', 'SCSS'],
     visual: 'blocks',
+    image: bananabreadScreenshot,
     links: [
       {
         label: 'Visit Site',
@@ -183,6 +191,7 @@ export const projects: Project[] = [
       "A minimal voice-leading tool for songwriters and composers, inspired by Brian Eno's Oblique Strategies. Instead of picking chords, you move individual voices by small intervals guided by a strategy drawn from a deck of twenty. The chord that results is a byproduct, not the point.",
     tags: ['Vue 3', 'TypeScript', 'Ionic', 'Capacitor', 'Pinia', 'Tone.js'],
     visual: 'notes',
+    image: eddyScreenshot,
     links: [
       {
         label: 'Live Demo',
