@@ -1,6 +1,6 @@
 <script setup lang="ts">
 defineProps<{
-  variant: 'workflow' | 'trail' | 'notes' | 'blocks'
+  variant: 'workflow' | 'trail' | 'notes' | 'blocks' | 'sync'
 }>()
 </script>
 
@@ -43,7 +43,7 @@ defineProps<{
       <circle cx="160" cy="135" r="4" fill="currentColor" opacity="0.4" />
     </svg>
 
-    <svg v-else viewBox="0 0 320 180" class="art">
+    <svg v-else-if="variant === 'blocks'" viewBox="0 0 320 180" class="art">
       <rect x="20" y="20" width="280" height="52" rx="6" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.35" />
       <rect x="20" y="88" width="80" height="42" rx="5" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.35" />
       <rect x="220" y="88" width="80" height="42" rx="5" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.35" />
@@ -55,6 +55,20 @@ defineProps<{
         <path d="M209 134v-8m0 8h-8" />
       </g>
       <rect x="20" y="146" width="280" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="1 7" opacity="0.5" />
+    </svg>
+
+    <svg v-else viewBox="0 0 320 180" class="art">
+      <rect x="30" y="40" width="55" height="100" rx="10" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.35" />
+      <circle cx="57" cy="128" r="3" fill="currentColor" opacity="0.5" />
+      <rect x="235" y="50" width="60" height="80" rx="10" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.35" />
+      <circle cx="253" cy="72" r="3" fill="currentColor" />
+      <circle cx="253" cy="88" r="3" fill="currentColor" opacity="0.4" />
+      <circle cx="253" cy="104" r="3" fill="currentColor" opacity="0.4" />
+      <line x1="85" y1="90" x2="138" y2="90" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 8" opacity="0.5" />
+      <line x1="182" y1="90" x2="235" y2="90" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 8" opacity="0.5" />
+      <circle cx="160" cy="90" r="22" fill="none" stroke="currentColor" stroke-width="2" />
+      <path d="M160 72a18 18 0 0 1 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      <path d="M177 82l3 6-7-1" fill="currentColor" />
     </svg>
   </div>
 </template>

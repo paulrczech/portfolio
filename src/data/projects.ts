@@ -15,7 +15,7 @@ export interface Project {
   title: string
   blurb: string
   tags: string[]
-  visual: 'workflow' | 'trail' | 'notes' | 'blocks'
+  visual: 'workflow' | 'trail' | 'notes' | 'blocks' | 'sync'
   image?: string
   links?: ProjectLink[]
   caseStudy?: {
@@ -91,6 +91,38 @@ export const projects: Project[] = [
         },
       ],
       closing: 'Live now on the App Store and Google Play for CCCSA members.',
+    },
+  },
+  {
+    id: 'field-inspection-app',
+    eyebrow: 'Case Study · Enterprise Mobile',
+    title: 'Field Inspection App Modernization',
+    blurb:
+      'A legacy-to-modern rebuild of a field data collection app for utility infrastructure inspection crews: two-factor auth, role-based access, and a full offline-first sync workflow for crews working in poor-connectivity areas. Client work described here without the client name.',
+    tags: ['Vue 3', 'TypeScript', 'Ionic', 'Capacitor', 'Offline-First'],
+    visual: 'sync',
+    caseStudy: {
+      summary:
+        'A utility infrastructure inspection company needed its field data collection app rebuilt from the ground up. The existing app ran on an outdated, unsupported stack that could no longer be extended, while field crews still depended on it daily to record and submit inspection measurements, often from locations with poor or no connectivity.',
+      sections: [
+        {
+          heading: 'Role',
+          body: [
+            'Rebuilt the mobile front end using Vue 3 and Ionic, replacing the legacy stack while preserving every workflow existing users already depended on.',
+          ],
+        },
+        {
+          heading: 'What I built',
+          body: [
+            'A cross-platform iOS and Android app from a single Vue 3 and Ionic codebase, with two-factor authentication and role-based access for different user types.',
+            'A full offline-first workflow: field measurements save locally first, then sync automatically in the background on a timer and on network reconnect, with a visible pending-sync count so crews always know their data’s status.',
+            'State management built on reactive service singletons rather than Pinia or Vuex, paired with a purpose-built offline sync queue instead of reaching for a heavier off-the-shelf solution.',
+            'Multi-account and multi-device switching so support representatives can move between customer portals without re-authenticating.',
+          ],
+        },
+      ],
+      closing:
+        'The rebuild preserved every workflow existing users depended on while replacing a stack that could not be extended further, setting up a foundation the team could keep building on instead of facing another full rewrite down the line.',
     },
   },
   {
