@@ -38,7 +38,6 @@
 
 .hero-inner {
   position: relative;
-  max-width: 760px;
 }
 
 .headline {
