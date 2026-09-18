@@ -56,7 +56,6 @@ export const projects: Project[] = [
             'A dynamic form builder for assembling structured submissions from reusable component types, shared across edit, preview, and read-only modes.',
             'A messaging interface with auto-saving drafts and attachment handling.',
             'A shared component library (data tables, panels, validated form elements, modals) that grew alongside the product and now covers most new feature work through composition rather than new code.',
-            ,
           ],
         },
       ],
