@@ -5,7 +5,7 @@
   import IconLinkedin from './icons/IconLinkedin.vue'
   import IconGithub from './icons/IconGithub.vue'
   import IconCheck from './icons/IconCheck.vue'
-  import IconDownload from './icons/IconDownload.vue'
+  // import IconDownload from './icons/IconDownload.vue' // re-enable with the Resume link
 
   const EMAIL = 'paulrczech@gmail.com'
   const copied = ref(false)
@@ -66,9 +66,11 @@
           <IconGithub class="icon" /> GitHub
         </a>
 
+        <!-- Resume link disabled until the PDF is ready
         <a class="btn btn-ghost" href="/resume.pdf" download>
           <IconDownload class="icon" /> Resume
         </a>
+        -->
       </div>
     </div>
   </section>
