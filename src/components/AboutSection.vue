@@ -4,7 +4,7 @@ import profilePhoto from '../assets/profile/paul.jpg'
 
 const stats = [
   { value: '13+', label: 'Years of experience' },
-  { value: '3', label: 'Frameworks in production — Vue, React, Angular' },
+  { value: '3', label: 'Frameworks in production: Vue, React, Angular' },
   { value: 'Remote', label: 'Open to US-based remote roles' },
 ]
 </script>
@@ -23,20 +23,20 @@ const stats = [
 
         <p v-reveal class="paragraph">
           I'm a senior front-end developer with 13+ years building responsive, high-performance web
-          applications — from enterprise ticketing systems to mobile-first travel apps. My focus is
+          applications, from enterprise ticketing systems to mobile-first travel apps. My focus is
           Vue 3, with production experience across React and Angular, and I care as much about the
           architecture underneath an interface as the pixels on top of it.
         </p>
 
         <p v-reveal="80" class="paragraph">
           Day to day, that means turning ambiguous UX requirements into modular, maintainable
-          components — and, increasingly, using AI-assisted tooling like Claude Code to move faster
-          without cutting corners on quality.
+          components. Increasingly, that also means using AI-assisted tooling like Claude Code to
+          move faster without cutting corners on quality.
         </p>
 
         <p v-reveal="160" class="paragraph">
           I'm looking for a remote, senior-level front-end role on a team that cares about what
-          the work is actually for — building something worth building, not just shipping
+          the work is actually for: building something worth building, not just shipping
           features to hit a number. If that's the kind of team you're putting together, I'd love
           to talk.
         </p>

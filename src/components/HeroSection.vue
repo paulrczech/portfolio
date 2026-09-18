@@ -8,7 +8,7 @@
       <h1 class="headline enter" style="--delay: 90ms">I build interfaces that feel as good as they look.</h1>
       <p class="subhead enter" style="--delay: 180ms">
         13+ years turning complex requirements into clean, maintainable Vue, React, and Angular
-        applications — for teams that care about the details as much as I do.
+        applications for teams that care about the details as much as I do.
       </p>
       <div class="actions enter" style="--delay: 270ms">
         <a href="#work" class="btn btn-primary">View My Work</a>
@@ -21,7 +21,7 @@
 <style scoped>
 .hero {
   position: relative;
-  padding-block: clamp(96px, 16vw, 160px) clamp(64px, 10vw, 96px);
+  padding-block: clamp(96px, 16vw, 160px) clamp(40px, 5vw, 64px);
   overflow: hidden;
 }
 

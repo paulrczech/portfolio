@@ -117,7 +117,7 @@ p {
 }
 
 .section {
-  padding-block: clamp(64px, 10vw, 112px);
+  padding-block: clamp(48px, 7vw, 88px);
 }
 
 .eyebrow {

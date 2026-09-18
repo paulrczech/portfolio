@@ -29,8 +29,8 @@ async function copyEmail() {
       <p v-reveal class="eyebrow">Get In Touch</p>
       <h2 v-reveal class="section-heading">Let's build something together.</h2>
       <p v-reveal class="section-lede">
-        Open to remote, senior-level front-end roles. The fastest way to reach me is email —
-        happy to talk through anything on this page in more detail.
+        Open to remote, senior-level front-end roles. The fastest way to reach me is email, and
+        I'm happy to talk through anything on this page in more detail.
       </p>
 
       <div v-reveal="90" class="actions">
