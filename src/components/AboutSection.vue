@@ -30,8 +30,9 @@
           I'm a senior front-end developer with 13+ years building responsive,
           high-performance web applications, from enterprise ticketing systems
           to mobile-first travel apps. My focus is Vue 3, with production
-          experience across React and Angular, and I care as much about the
-          architecture underneath an interface as the pixels on top of it.
+          experience across React, Angular, and WordPress, including custom
+          Gutenberg block development, and I care as much about the architecture
+          underneath an interface as the pixels on top of it.
         </p>
 
         <p v-reveal="80" class="paragraph">

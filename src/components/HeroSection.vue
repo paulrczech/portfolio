@@ -11,9 +11,9 @@
         Code that works. <br />Interfaces that feel right.
       </h1>
       <p class="subhead enter" style="--delay: 180ms">
-        13+ years turning complex requirements into clean, maintainable Vue,
-        React, and Angular applications for teams that care about the details as
-        much as I do.
+        13+ years turning complex requirements into clean, maintainable
+        front-end code, from Vue, React, and Angular applications to custom
+        WordPress builds, for teams that care about the details as much as I do.
       </p>
       <div class="actions enter" style="--delay: 270ms">
         <a href="#work" class="btn btn-primary">View My Work</a>
