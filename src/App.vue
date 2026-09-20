@@ -28,7 +28,7 @@
     </section>
 
     <section class="pool">
-      <p class="pool-lede">the work</p>
+      <p class="lede">the work</p>
       <p class="pool-line">
         An airline pilot schedule dispute tracker, built as a module inside an
         existing enterprise portal.
@@ -48,6 +48,7 @@
     </section>
 
     <section class="channel">
+      <p class="lede">pilot dispute tracker</p>
       <p>
         The pilot dispute tracker started as wireframes and a requirements
         doc. My job was to turn that into something people actually used: a
@@ -127,7 +128,7 @@
     padding-bottom: 24vh;
   }
 
-  .pool-lede {
+  .lede {
     font-family: var(--font-mono);
     font-size: 0.85rem;
     opacity: 0.55;
