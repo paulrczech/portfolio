@@ -10,10 +10,10 @@ useDepth(field)
   <div ref="field" class="depth-field">
     <p class="piece">
       Thirteen years doing this, and all but one of them remote. Most of
-      what I've built, I never saw in person: someone else's portal,
-      someone else's API, a component library I didn't choose. I used to
-      think that was the less interesting version of the job. Turns out
-      it's most of the job, and if I'm honest, it's the part I got good at.
+      what I've built started as someone else's: a portal, an API, a
+      component library I didn't choose. I used to think that was the less
+      interesting version of the job. Turns out it's most of the job, and
+      if I'm honest, it's the part I got good at.
     </p>
   </div>
 </template>
