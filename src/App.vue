@@ -80,10 +80,8 @@
   }
 
   .pool-line {
-    font-family: var(--font-display);
-    font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 1.5;
+    font-size: 1.2rem;
+    line-height: 1.6;
     max-width: 46ch;
   }
 </style>
