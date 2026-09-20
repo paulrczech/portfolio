@@ -1,26 +1,35 @@
 <script setup lang="ts">
-import { onMounted } from 'vue'
-import { useTheme } from './composables/useTheme'
-import TheHeader from './components/TheHeader.vue'
-import HeroSection from './components/HeroSection.vue'
-import AboutSection from './components/AboutSection.vue'
-import ProjectsSection from './components/ProjectsSection.vue'
-import SkillsSection from './components/SkillsSection.vue'
-import ContactSection from './components/ContactSection.vue'
-import TheFooter from './components/TheFooter.vue'
+import { ref } from 'vue'
+import { useDepth } from './composables/useDepth'
 
-const { initTheme } = useTheme()
-onMounted(initTheme)
+const field = ref<HTMLElement | null>(null)
+useDepth(field)
 </script>
 
 <template>
-  <TheHeader />
-  <main>
-    <HeroSection />
-    <AboutSection />
-    <ProjectsSection />
-    <SkillsSection />
-    <ContactSection />
-  </main>
-  <TheFooter />
+  <div ref="field" class="depth-field">
+    <p class="piece">
+      Most of what I've built over the last thirteen years has lived inside a
+      system already in motion: a portal that predates me, an API I don't
+      control, a component library someone else started. That's not a
+      complaint. It's just where the real work happens, and I've gotten
+      better at it than I ever was at working from a blank canvas.
+    </p>
+  </div>
 </template>
+
+<style scoped>
+.depth-field {
+  min-height: 220vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 20vh;
+}
+
+.piece {
+  max-width: 40ch;
+  padding-inline: 24px;
+  font-size: 1.2rem;
+  line-height: 1.85;
+}
+</style>
