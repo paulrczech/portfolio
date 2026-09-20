@@ -25,20 +25,21 @@
     <section class="pool">
       <p class="pool-lede">the work</p>
       <p class="pool-line">
-        An enterprise system a national pilot union uses to track and resolve
-        contract disputes.
+        An airline pilot schedule dispute tracker, built as a module inside
+        an existing enterprise portal.
       </p>
       <p class="pool-line">
-        A mobile app for a cross-country ski association, live on the App Store
-        and Google Play.
+        A mobile app for a cross-country ski association. Live on the App
+        Store and Google Play.
       </p>
       <p class="pool-line">
-        A legacy rebuild for a utility inspection company that still runs in the
-        field.
+        A field data collection app for a utility company, rebuilt from an
+        old system to a modern one. Still used by inspection crews on the
+        job today.
       </p>
       <p class="pool-line">
-        A WordPress demo site for showing prospective clients a
-        structured-content approach, built on a custom Gutenberg block library.
+        A WordPress site I built to show what a custom Gutenberg block
+        library can do. It's a demo, but everything on it works.
       </p>
     </section>
   </div>
