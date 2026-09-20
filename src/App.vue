@@ -75,6 +75,31 @@
         features rather than something new.
       </p>
     </section>
+
+    <section class="channel">
+      <p class="lede">ski trail app</p>
+      <p>
+        The ski association's app started with paper: paper trail maps,
+        paper punch cards for lift access. My job was to make all of that
+        live on a phone, in one codebase that ships to both iOS and
+        Android.
+      </p>
+
+      <p>
+        GPS trail navigation was the trickiest part, since most of these
+        trails sit in places without reliable signal. The maps have to work
+        offline, cached ahead of time instead of fetched live. Punch passes
+        turned out to be simpler: the same idea as the paper card, just
+        digital, checked at each resort instead of hole-punched.
+      </p>
+
+      <p>
+        Weather and conditions show up by trail and resort, pulled in fresh
+        whenever there's a connection. I built it from the first design
+        file through submitting it to both app stores myself, so when
+        something breaks, I'm the one who hears about it.
+      </p>
+    </section>
   </div>
 </template>
 
