@@ -8,6 +8,11 @@
 
 <template>
   <div ref="field" class="depth-field">
+    <header class="identity">
+      <p class="name">Paul Czech</p>
+      <p class="role">Front-End Developer</p>
+    </header>
+
     <section class="channel">
       <p>
         Thirteen years doing this, most of it remote. I’ve built projects from
@@ -52,10 +57,27 @@
     align-items: center;
   }
 
+  .identity {
+    align-self: flex-start;
+    padding: 32px 24px 0;
+  }
+
+  .name {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  .role {
+    margin-top: 4px;
+    font-size: 0.85rem;
+    opacity: 0.55;
+  }
+
   .channel {
     max-width: 40ch;
     padding-inline: 24px;
-    padding-block: 20vh 12vh;
+    padding-block: 12vh 12vh;
     font-size: 1.2rem;
     line-height: 1.85;
   }
