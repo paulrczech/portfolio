@@ -9,11 +9,11 @@ useDepth(field)
 <template>
   <div ref="field" class="depth-field">
     <p class="piece">
-      Thirteen years in, and most of what I've built didn't start from
-      nothing. It was someone else's portal, someone else's API, a
-      component library I didn't choose. I used to think that was the less
-      interesting version of the job. Turns out it's most of the job, and
-      if I'm honest, it's the part I got good at.
+      Thirteen years doing this, and all but one of them remote. Most of
+      what I've built, I never saw in person: someone else's portal,
+      someone else's API, a component library I didn't choose. I used to
+      think that was the less interesting version of the job. Turns out
+      it's most of the job, and if I'm honest, it's the part I got good at.
     </p>
   </div>
 </template>
