@@ -11,9 +11,9 @@ useDepth(field)
     <p class="piece">
       Thirteen years doing this, and all but one of them remote. Most of
       what I've built started as someone else's: a portal, an API, a
-      component library I didn't choose. I used to think that was the less
+      WordPress block library. I used to think that was the less
       interesting version of the job. Turns out it's most of the job, and
-      if I'm honest, it's the part I got good at.
+      it's the part I got good at.
     </p>
   </div>
 </template>
