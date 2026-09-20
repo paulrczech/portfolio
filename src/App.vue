@@ -51,27 +51,27 @@
       <p>
         The pilot dispute tracker started as wireframes and a requirements
         doc. My job was to turn that into something people actually used: a
-        Vue app with different views depending on who's logged in, since a
-        pilot filing a claim needs different tools than the union rep who
-        approves it.
+        Vue app with different views depending on the role of the logged in
+        user, because different people needed different tools depending on
+        where a claim was in the process.
       </p>
 
       <p>
         Filing a claim isn't one form. It's incident details, timecards,
         schedules, attachments, sometimes a written statement, all of it
-        structured enough to route correctly once submitted. I built that as
-        a set of reusable pieces instead of one long form. That decision
-        paid off later: the same pieces get reused across submission,
-        review, and read-only views, so the union side and the pilot side of
-        the same claim never drift apart.
+        structured enough to be routed correctly once submitted. I built
+        that as a set of reusable pieces rather than one long form. That
+        decision paid off later: the same pieces get reused across
+        submission, review, and read-only views, so a claim looks and
+        behaves consistently no matter who's looking at it or at what stage.
       </p>
 
       <p>
-        There's also a messaging system, threaded, with drafts that save
-        themselves and attachments that don't disappear between screens.
-        Underneath all of it is a component library that started small and
-        kept growing. Most new features now get built by combining what's
-        already there instead of writing something new.
+        There’s also a threaded messaging system, with self-saving drafts
+        and attachments that don’t vanish between screens. But underneath
+        it all is a component library that began small and just kept on
+        growing. Most new features are now combinations of existing
+        features rather than something new.
       </p>
     </section>
   </div>
