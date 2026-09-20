@@ -11,14 +11,14 @@
     <div class="content">
       <p>
         Thirteen years doing this, most of it remote. I've built projects from
-        scratch, taken over the architecture on systems that already existed,
-        and picked up new platforms fast enough to do real work in them within
-        weeks. The stack keeps changing, and I keep up.
+        scratch, owned architecture on existing systems, and learned new
+        platforms fast enough to do real work with them in weeks. The stack
+        keeps moving, and I keep pace.
       </p>
 
       <p>
-        Outside of that, I write and record music, and I've been building a
-        personal app called Eddy for other songwriters to use.
+        Other than that, I write and record music. I’ve been working on a
+        personal app called Eddy that other songwriters can use.
       </p>
     </div>
   </div>
