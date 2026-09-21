@@ -64,8 +64,7 @@ export const projects: Project[] = [
           ],
         },
       ],
-      closing:
-        'The system now spans dozens of views on top of that shared library, and new feature areas are typically built by composing existing pieces rather than writing new ones, a good sign the early architecture is still holding up as the product grows.',
+      closing: '',
     },
   },
   {
@@ -73,7 +72,7 @@ export const projects: Project[] = [
     eyebrow: 'Case Study · Mobile',
     title: 'Colorado Ski Trail Guide App',
     blurb:
-      'A mobile-first app for the Colorado Cross Country Skiing Association covering GPS trail navigation, resort punch-pass redemption, and real-time weather, built on reusable components and modular state logic.',
+      'A mobile-first app for the Colorado Cross Country Skiing Association covering resort discovery, punch-pass redemption, and real-time weather, built on reusable components and modular state logic.',
     tags: ['Vue 3', 'Ionic', 'Capacitor', 'Geolocation'],
     visual: 'trail',
     image: cccsaScreenshot,
@@ -92,20 +91,20 @@ export const projects: Project[] = [
     ],
     caseStudy: {
       summary:
-        'CCCSA needed a single mobile app to replace paper trail maps and punch cards for its members, covering live GPS trail navigation, digital punch-pass redemption at resorts, and up-to-date weather and conditions.',
+        'CCCSA needed a single mobile app for its members, covering resort discovery with GPS, digital punch-pass redemption, and up-to-date weather and conditions.',
       sections: [
         {
           heading: 'Role',
           body: [
-            'Built the front end using Vue 3 and Ionic, working from design through deployment to the app stores.',
+            'Built the front end using Vue 3 and Ionic, from early design through launch.',
           ],
         },
         {
           heading: 'What I built',
           body: [
-            'GPS-based trail navigation with offline-friendly map data for use in areas with poor signal.',
-            'Digital punch-pass redemption, replacing a paper-based system at participating resorts.',
-            'Real-time weather and conditions surfaced contextually by trail and resort.',
+            'A GPS-based resort locator with offline-friendly map data, so members can find and pick a resort even with poor signal.',
+            'Digital punch-pass redemption at participating resorts.',
+            'Real-time weather and conditions surfaced by resort.',
           ],
         },
       ],
@@ -122,26 +121,24 @@ export const projects: Project[] = [
     visual: 'sync',
     caseStudy: {
       summary:
-        'A utility infrastructure inspection company needed its field data collection app rebuilt from the ground up. The existing app ran on an outdated, unsupported stack that could no longer be extended, while field crews still depended on it daily to record and submit inspection measurements, often from locations with poor or no connectivity.',
+        'A utility infrastructure inspection company needed its field data collection app rebuilt from the ground up. The existing app ran on an outdated, unsupported stack, while field crews still depended on it daily to record inspections, often from locations with poor or no connectivity.',
       sections: [
         {
           heading: 'Role',
           body: [
-            'Rebuilt the mobile front end using Vue 3 and Ionic, working against APIs maintained by a separate backend team, while replacing the legacy stack and preserving every workflow existing users already depended on.',
+            'Rebuilt the mobile front end using Vue 3 and Ionic, working against APIs from a separate backend team, while preserving every workflow existing users depended on.',
           ],
         },
         {
           heading: 'What I built',
           body: [
-            'A cross-platform iOS and Android app from a single Vue 3 and Ionic codebase, including the front-end flows for two-factor authentication and role-based access across different user types.',
-            'A full offline-first workflow: field measurements save locally first, then sync automatically in the background on a timer and on network reconnect, with a visible pending-sync count so crews always know their data’s status.',
-            'State management built on reactive service singletons rather than Pinia or Vuex, paired with a purpose-built offline sync queue instead of reaching for a heavier off-the-shelf solution.',
-            'Multi-account and multi-device switching so support representatives can move between customer portals without re-authenticating.',
+            'A cross-platform iOS and Android app from a single Vue 3 and Ionic codebase, with front-end flows for two-factor authentication and role-based access across different user types.',
+            "An offline-first workflow built on a custom sync queue: field measurements save locally first, then sync automatically on a timer or reconnect, with a visible pending-sync count so crews always know their data's status.",
+            'Multi-account and multi-device switching so support reps can move between customer portals without re-authenticating.',
           ],
         },
       ],
-      closing:
-        'The rebuild preserved every workflow existing users depended on while replacing a stack that could not be extended further, setting up a foundation the team could keep building on instead of facing another full rewrite down the line.',
+      closing: '',
     },
   },
   {
@@ -162,25 +159,24 @@ export const projects: Project[] = [
     ],
     caseStudy: {
       summary:
-        "Prospective clients often came in asking for 'a page builder plugin,' and ended up with content that was flexible but inconsistent, hard to maintain, and easy to break. This site was built as a working demo to make the opposite case: give editors real layout flexibility through a purpose-built set of Gutenberg blocks, without losing the guardrails that keep a site's content clean and on-brand.",
+        "Page builder plugins are a common request, but they tend to produce content that's flexible in the wrong way: inconsistent, hard to maintain, easy to break. This site was built as a working demo for future client conversations, making the case for something better: real layout flexibility through a purpose-built set of Gutenberg blocks, without losing the guardrails that keep a site's content clean and on-brand.",
       sections: [
         {
           heading: 'Role',
           body: [
-            'Styled and extended a custom Gutenberg block library built by a teammate: matching a Figma design system precisely, adding functionality to existing blocks as new content needs came up, and building several new blocks from scratch to round out the library.',
+            'Styled and extended a custom Gutenberg block library built by a teammate: matching a Figma design system, adding functionality to existing blocks as new content needs came up, and building several new blocks from scratch to round out the library.',
           ],
         },
         {
           heading: 'What I built',
           body: [
-            'Custom front-end styling for the full block library (banners, cards, CTAs, testimonials, stats, accordions, and more), matched closely to the project’s Figma design system.',
-            'Extended several existing blocks with new functionality as the demo’s content needs grew beyond their original scope.',
-            'Designed and built several new blocks from scratch to fill gaps the original library didn’t cover.',
+            "Custom front-end styling for the full block library, banners, cards, CTAs, testimonials, stats, accordions, and more, matched to the project's Figma design system.",
+            "Extended several existing blocks with new functionality as the demo's content needs grew.",
+            "Designed and built several new blocks from scratch to fill gaps the original library didn't cover.",
           ],
         },
       ],
-      closing:
-        "It's what the agency still pulls up when a prospective client asks what ‘structured content’ actually looks like in practice: a working site, not just a slide deck.",
+      closing: '',
     },
   },
   {

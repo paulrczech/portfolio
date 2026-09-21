@@ -8,12 +8,13 @@
         Senior Front-End Developer · Open to Remote (US)
       </p>
       <h1 class="headline enter" style="--delay: 90ms">
-        Code that works. <br />Interfaces that feel right.
+        Reliable code, thoughtful craft.
       </h1>
       <p class="subhead enter" style="--delay: 180ms">
         13+ years turning complex requirements into clean, maintainable
         front-end code, from Vue, React, and Angular applications to custom
-        WordPress builds, for teams that care about the details as much as I do.
+        WordPress and DNN builds, for teams that care about how something's
+        built, not just how it looks.
       </p>
       <div class="actions enter" style="--delay: 270ms">
         <a href="#work" class="btn btn-primary">View My Work</a>
