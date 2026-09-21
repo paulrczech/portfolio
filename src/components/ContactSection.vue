@@ -31,9 +31,8 @@
         Looking for good work, not just more work.
       </h2>
       <p v-reveal class="section-lede">
-        Open to remote, senior-level front-end roles. The fastest way to reach
-        me is email, and I'm happy to talk through anything on this page in more
-        detail.
+        Open to remote, front-end roles. The fastest way to reach me is email,
+        and I'm happy to talk through anything on this page in more detail.
       </p>
 
       <div v-reveal="90" class="actions">

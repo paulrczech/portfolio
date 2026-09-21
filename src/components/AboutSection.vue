@@ -39,10 +39,9 @@
         </p>
 
         <p v-reveal="160" class="paragraph">
-          I'm looking for a remote, senior-level front-end role on a team that
-          cares about what the work is actually for, not just shipping features
-          to hit a number. If that's the type of team you're building, I'd love
-          to chat.
+          I'm looking for a remote, front-end role on a team that builds with
+          purpose, not just shipping features to hit a number. If that's the
+          type of team you're building, I'd love to chat.
         </p>
       </div>
 

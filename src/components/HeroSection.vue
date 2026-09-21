@@ -2,10 +2,10 @@
 
 <template>
   <section id="top" class="hero">
-    <div class="glow" aria-hidden="true" />
+    <!-- <div class="glow" aria-hidden="true" /> -->
     <div class="container hero-inner">
       <p class="eyebrow enter" style="--delay: 0ms">
-        Senior Front-End Developer · Open to Remote (US)
+        Front-End Developer · Open to Remote (US)
       </p>
       <h1 class="headline enter" style="--delay: 90ms">
         Reliable code, thoughtful craft.
