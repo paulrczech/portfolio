@@ -50,54 +50,57 @@
     <section class="channel">
       <p class="lede">pilot dispute tracker</p>
       <p>
-        The pilot dispute tracker started as wireframes and a requirements
-        doc. My job was to turn that into something people actually used: a
-        Vue app with different views depending on the role of the logged in
-        user, because different people needed different tools depending on
-        where a claim was in the process.
+        The pilot dispute tracker started as wireframes and a requirements doc.
+        My job was to turn that into something people actually used: a Vue app
+        with different views depending on the role of the logged in user,
+        because different people needed different tools depending on where a
+        claim was in the process.
       </p>
 
       <p>
         Filing a claim isn't one form. It's incident details, timecards,
         schedules, attachments, sometimes a written statement, all of it
-        structured enough to be routed correctly once submitted. I built
-        that as a set of reusable pieces rather than one long form. That
-        decision paid off later: the same pieces get reused across
-        submission, review, and read-only views, so a claim looks and
-        behaves consistently no matter who's looking at it or at what stage.
+        structured enough to be routed correctly once submitted. I built that as
+        a set of reusable pieces rather than one long form. That decision paid
+        off later: the same pieces get reused across submission, review, and
+        read-only views, so a claim looks and behaves consistently no matter
+        who's looking at it or at what stage.
       </p>
 
       <p>
-        There’s also a threaded messaging system, with self-saving drafts
-        and attachments that don’t vanish between screens. But underneath
-        it all is a component library that began small and just kept on
-        growing. Most new features are now combinations of existing
-        features rather than something new.
+        There’s also a threaded messaging system, with self-saving drafts and
+        attachments that don’t vanish between screens. But underneath it all is
+        a component library that began small and just kept on growing. Most new
+        features are now combinations of existing features rather than something
+        new.
+      </p>
+      <p>
+        This project is under NDA. Everything above is accurate to the actual
+        work; names and identifying details have been left out.
       </p>
     </section>
 
     <section class="channel">
       <p class="lede">ski trail app</p>
       <p>
-        The ski association's app started with paper: paper trail maps,
-        paper punch cards for lift access. My job was to make all of that
-        live on a phone, in one codebase that ships to both iOS and
-        Android.
+        The ski association's app started with paper: paper trail maps, paper
+        punch cards for lift access. My job was to make all of that live on a
+        phone, in one codebase that ships to both iOS and Android.
       </p>
 
       <p>
-        GPS trail navigation was the trickiest part, since most of these
-        trails sit in places without reliable signal. The maps have to work
-        offline, cached ahead of time instead of fetched live. Punch passes
-        turned out to be simpler: the same idea as the paper card, just
-        digital, checked at each resort instead of hole-punched.
+        GPS trail navigation was the trickiest part, since most of these trails
+        sit in places without reliable signal. The maps have to work offline,
+        cached ahead of time instead of fetched live. Punch passes turned out to
+        be simpler: the same idea as the paper card, just digital, checked at
+        each resort instead of hole-punched.
       </p>
 
       <p>
         Weather and conditions show up by trail and resort, pulled in fresh
-        whenever there's a connection. I built it from the first design
-        file through submitting it to both app stores myself, so when
-        something breaks, I'm the one who hears about it.
+        whenever there's a connection. I built it from the first design file
+        through submitting it to both app stores myself, so when something
+        breaks, I'm the one who hears about it.
       </p>
     </section>
   </div>
