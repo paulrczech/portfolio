@@ -28,22 +28,21 @@
 
         <p v-reveal class="paragraph">
           I've shipped everything from enterprise ticketing systems to
-          mobile-first travel apps, adapting to whatever stack the work
-          required.
+          mobile-first travel apps, adapting to whatever stack the job required.
         </p>
 
         <p v-reveal="80" class="paragraph">
-          Day to day, that means turning UX requirements, clear or ambiguous,
-          into modular, maintainable components. Increasingly, that also means
-          using AI-assisted tooling like Claude Code to move faster without
-          cutting corners on quality.
+          Day to day, that means translating UX requirements, clear or
+          ambiguous, into modular, maintainable components. Increasingly, that
+          also means using AI-assisted tooling like Claude Code to move faster
+          without losing quality.
         </p>
 
         <p v-reveal="160" class="paragraph">
           I'm looking for a remote, senior-level front-end role on a team that
           cares about what the work is actually for, not just shipping features
-          to hit a number. If that's the kind of team you're putting together,
-          I'd love to talk.
+          to hit a number. If that's the type of team you're building, I'd love
+          to chat.
         </p>
       </div>
 
